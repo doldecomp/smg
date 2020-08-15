@@ -1053,9 +1053,14 @@ lbl_8069C1E0:
 .global lbl_8069C1E4
 lbl_8069C1E4:
 	.skip 0xA4
-.global lbl_8069C288
-lbl_8069C288:
-	.skip 0x430
+
+.global gTRKCPUState
+gTRKCPUState:
+	.space 4
+
+.global lbl_8069C28C
+lbl_8069C28C:
+	.skip 0x42C
 .global lbl_8069C6B8
 lbl_8069C6B8:
 	.skip 0x94
@@ -1065,15 +1070,17 @@ lbl_8069C74C:
 .global lbl_8069C760
 lbl_8069C760:
 	.skip 0x8
-.global lbl_8069C768
-lbl_8069C768:
-	.skip 0x8
+.global TRK_mainError
+TRK_mainError:
+	.space 4
+	.align 4
 .global lbl_8069C770
 lbl_8069C770:
 	.skip 0x8
-.global lbl_8069C778
-lbl_8069C778:
-	.skip 0x8
+.global bUseSerialIO
+bUseSerialIO:
+	.space 4
+	.align 4
 .global lbl_8069C780
 lbl_8069C780:
 	.skip 0x500

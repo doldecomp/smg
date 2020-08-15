@@ -17,10 +17,24 @@ TARGET := smg1_us
 BUILD_DIR := build/$(TARGET)
 
 SRC_DIRS := src
-ASM_DIRS := asm
+ASM_DIRS := asm asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
+			asm/runtime_libs/debugger/embedded/MetroTRK/Export \
+			asm/runtime_libs/debugger/embedded/MetroTRK/Os/dolphin \
+			asm/runtime_libs/debugger/embedded/MetroTRK/Processor/ppc/Generic \
+			asm/runtime_libs/gamedev/cust_connection/cc/exi2/GCN/EXI2_GDEV_GCN \
+			asm/runtime_libs/gamedev/cust_connection/utils/common \
+			asm/runtime_libs/gamedev/cust_connection/utils/gc
 
 # Inputs
-S_FILES := $(wildcard asm/*.s)
+S_FILES := $(wildcard asm/*.s) $(wildcard asm/runtime_libs/debugger/embedded/MetroTRK/Export/*.s) \
+			$(wildcard asm/runtime_libs/debugger/embedded/MetroTRK/Portable/*.s)  \
+			$(wildcard asm/runtime_libs/debugger/embedded/MetroTRK/Os/dolphin/*.s)  \
+			$(wildcard asm/runtime_libs/debugger/embedded/MetroTRK/Processor/ppc/Generic/*.s) \
+			$(wildcard asm/runtime_libs/gamedev/cust_connection/cc/exi2/GCN/EXI2_GDEV_GCN/*.s) \
+			$(wildcard asm/runtime_libs/gamedev/cust_connection/utils/common/*.s) \
+			$(wildcard asm/runtime_libs/gamedev/cust_connection/utils/gc/*.s) \
+
+C_FILES := $(wildcar src/*.c)
 CPP_FILES := $(wildcard src/*.cpp)
 LDSCRIPT := $(BUILD_DIR)/ldscript.lcf
 

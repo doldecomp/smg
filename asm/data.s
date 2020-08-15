@@ -31988,7 +31988,11 @@ lbl_805D59D0:
 	.incbin "baserom.dol", 0x5D1AD0, 0x58
 .global lbl_805D5A28
 lbl_805D5A28:
-	.incbin "baserom.dol", 0x5D1B28, 0x5C
+	.byte 0, 1, 0, 1, 0, 1, 7, 5, 6, 0, 0, 0, 0, 0, 0, 7
+.global lbl_805D5A38
+lbl_805D5A38:
+	.string "<< RVL_SDK - KPAD \trelease build: Aug 29 2007 11:54:56 (0x4200_60422) >>"
+	.balign 4
 .global lbl_805D5A84
 lbl_805D5A84:
 	.incbin "baserom.dol", 0x5D1B84, 0x54
@@ -33669,6 +33673,42 @@ lbl_805F59A4:
 .global lbl_805F59B8
 lbl_805F59B8:
 	.incbin "baserom.dol", 0x5F1AB8, 0x40
-.global lbl_805F59F8
-lbl_805F59F8:
-	.incbin "baserom.dol", 0x5F1AF8, 0x28
+
+.global gDBCommTable
+gDBCommTable:
+	.long 0
+.global lbl_805F59FC
+lbl_805F59FC:
+	.long 0
+
+.global lbl_805F5A00
+lbl_805F5A00:
+	.long 0
+
+.global lbl_805F5A04
+lbl_805F5A04:
+	.long 0
+
+.global lbl_805F5A08
+lbl_805F5A08:
+	.long 0
+
+.global lbl_805F5A0C
+lbl_805F5A0C:
+	.long 0
+
+.global lbl_805F5A10
+lbl_805F5A10:
+	.long 0
+
+.global lbl_805F5A14
+lbl_805F5A14:
+	.long 0
+
+.global lbl_805F5A18
+lbl_805F5A18:
+	.long 0
+
+.global lbl_805F5A1C
+lbl_805F5A1C:
+	.long 0
