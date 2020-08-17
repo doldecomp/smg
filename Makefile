@@ -23,7 +23,8 @@ ASM_DIRS := asm asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
 			asm/runtime_libs/debugger/embedded/MetroTRK/Processor/ppc/Generic \
 			asm/runtime_libs/gamedev/cust_connection/cc/exi2/GCN/EXI2_GDEV_GCN \
 			asm/runtime_libs/gamedev/cust_connection/utils/common \
-			asm/runtime_libs/gamedev/cust_connection/utils/gc
+			asm/runtime_libs/gamedev/cust_connection/utils/gc \
+			asm/ndev
 
 # Inputs
 S_FILES := $(wildcard asm/*.s) $(wildcard asm/runtime_libs/debugger/embedded/MetroTRK/Export/*.s) \
@@ -33,6 +34,7 @@ S_FILES := $(wildcard asm/*.s) $(wildcard asm/runtime_libs/debugger/embedded/Met
 			$(wildcard asm/runtime_libs/gamedev/cust_connection/cc/exi2/GCN/EXI2_GDEV_GCN/*.s) \
 			$(wildcard asm/runtime_libs/gamedev/cust_connection/utils/common/*.s) \
 			$(wildcard asm/runtime_libs/gamedev/cust_connection/utils/gc/*.s) \
+			$(wildcard asm/ndev/*.s) \
 
 C_FILES := $(wildcar src/*.c)
 CPP_FILES := $(wildcard src/*.cpp)

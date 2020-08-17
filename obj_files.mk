@@ -37,7 +37,8 @@ TEXT_O_FILES := 						            \
     $(BUILD_DIR)/asm/runtime_libs/gamedev/cust_connection/cc/exi2/GCN/EXI2_GDEV_GCN/main.o   \
     $(BUILD_DIR)/asm/runtime_libs/gamedev/cust_connection/utils/common/CircleBuffer.o   \
     $(BUILD_DIR)/asm/runtime_libs/gamedev/cust_connection/utils/gc/MWCriticalSection_gc.o  \
-    $(BUILD_DIR)/asm/text1_1.o
+    $(BUILD_DIR)/asm/ndev/DebuggerDriver.o  \
+    $(BUILD_DIR)/asm/ndev/exi2.o  \
 
 CTORS_O_FILES :=                                    \
     $(BUILD_DIR)/asm/ctors.o
