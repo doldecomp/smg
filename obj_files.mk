@@ -9,6 +9,15 @@ EXTABINDEX_O_FILES :=                               \
 
 TEXT_O_FILES := 						            \
 	$(BUILD_DIR)/asm/text1.o                        \
+    $(BUILD_DIR)/asm/runtime_libs/debugger/embedded/MetroTRK/Portable/mainloop.o    \
+    $(BUILD_DIR)/asm/runtime_libs/debugger/embedded/MetroTRK/Portable/nubevent.o    \
+    $(BUILD_DIR)/asm/runtime_libs/debugger/embedded/MetroTRK/Portable/nubinit.o    \
+    $(BUILD_DIR)/asm/runtime_libs/debugger/embedded/MetroTRK/Portable/msg.o    \
+    $(BUILD_DIR)/asm/runtime_libs/debugger/embedded/MetroTRK/Portable/msgbuf.o    \
+    $(BUILD_DIR)/asm/runtime_libs/debugger/embedded/MetroTRK/Portable/serpoll.o    \
+    $(BUILD_DIR)/asm/runtime_libs/debugger/embedded/MetroTRK/Os/dolphin/usr_put.o \
+    $(BUILD_DIR)/asm/runtime_libs/debugger/embedded/MetroTRK/Portable/dispatch.o    \
+    $(BUILD_DIR)/asm/runtime_libs/debugger/embedded/MetroTRK/Portable/msghndlr.o    \
     $(BUILD_DIR)/asm/runtime_libs/debugger/embedded/MetroTRK/Portable/support.o    \
     $(BUILD_DIR)/asm/runtime_libs/debugger/embedded/MetroTRK/Portable/mutex_TRK.o  \
     $(BUILD_DIR)/asm/runtime_libs/debugger/embedded/MetroTRK/Portable/notify.o     \
