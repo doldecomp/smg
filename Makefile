@@ -16,7 +16,8 @@ TARGET := smg1_us
 
 BUILD_DIR := build/$(TARGET)
 
-SRC_DIRS := src
+SRC_DIRS := src src/runtime_libs/debugger/embedded/MetroTRK/Os/dolphin
+
 ASM_DIRS := asm asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
 			asm/runtime_libs/debugger/embedded/MetroTRK/Export \
 			asm/runtime_libs/debugger/embedded/MetroTRK/Os/dolphin \
@@ -27,17 +28,9 @@ ASM_DIRS := asm asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
 			asm/ndev
 
 # Inputs
-S_FILES := $(wildcard asm/*.s) $(wildcard asm/runtime_libs/debugger/embedded/MetroTRK/Export/*.s) \
-			$(wildcard asm/runtime_libs/debugger/embedded/MetroTRK/Portable/*.s)  \
-			$(wildcard asm/runtime_libs/debugger/embedded/MetroTRK/Os/dolphin/*.s)  \
-			$(wildcard asm/runtime_libs/debugger/embedded/MetroTRK/Processor/ppc/Generic/*.s) \
-			$(wildcard asm/runtime_libs/gamedev/cust_connection/cc/exi2/GCN/EXI2_GDEV_GCN/*.s) \
-			$(wildcard asm/runtime_libs/gamedev/cust_connection/utils/common/*.s) \
-			$(wildcard asm/runtime_libs/gamedev/cust_connection/utils/gc/*.s) \
-			$(wildcard asm/ndev/*.s) \
-
-C_FILES := $(wildcar src/*.c)
-CPP_FILES := $(wildcard src/*.cpp)
+S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))
+C_FILES := $(foreach dir,$(SRC_DIRS),$(wildcard $(dir)/*.c))
+CPP_FILES := $(foreach dir,$(SRC_DIRS),$(wildcard $(dir)/*.cpp))
 LDSCRIPT := $(BUILD_DIR)/ldscript.lcf
 
 # Outputs
@@ -121,9 +114,13 @@ $(ELF): $(O_FILES) $(LDSCRIPT)
 	$(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) $(O_FILES)
 # The Metrowerks linker doesn't generate physical addresses in the ELF program headers. This fixes it somehow.
 	$(OBJCOPY) $@ $@
+
 $(BUILD_DIR)/%.o: %.s
 	$(AS) $(ASFLAGS) -o $@ $<
 
+$(BUILD_DIR)/%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
 $(BUILD_DIR)/%.o: %.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
-	$(PYTHON) $(POSTPROC) $(PROCFLAGS) $@
+#$(PYTHON) $(POSTPROC) $(PROCFLAGS) $@
