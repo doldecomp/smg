@@ -2,10 +2,6 @@
 
 .include "macros.inc"
 
-.global usr_put_initialize
-usr_put_initialize:
-/* 80527F34 00523474  4E 80 00 20 */	blr 
-
 .global usr_puts_serial
 usr_puts_serial:
 /* 80527F38 00523478  94 21 FF E0 */	stwu r1, -0x20(r1)

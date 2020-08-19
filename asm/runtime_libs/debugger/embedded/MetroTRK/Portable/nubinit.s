@@ -2,8 +2,6 @@
 
 .include "macros.inc"
 
-.global usr_put_initialize
-
 .global TRKNubWelcome
 TRKNubWelcome:
 /* 8052739C 005228DC  94 21 FF F0 */	stwu r1, -0x10(r1)

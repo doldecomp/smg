@@ -25,7 +25,9 @@ ASM_DIRS := asm asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
 			asm/runtime_libs/gamedev/cust_connection/cc/exi2/GCN/EXI2_GDEV_GCN \
 			asm/runtime_libs/gamedev/cust_connection/utils/common \
 			asm/runtime_libs/gamedev/cust_connection/utils/gc \
-			asm/ndev
+			asm/ndev \
+			asm/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision \
+			asm/MSL/MSL_C/PPC_EABI/SRC
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))
