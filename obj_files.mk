@@ -9,6 +9,34 @@ EXTABINDEX_O_FILES :=                               \
 
 TEXT_O_FILES := 						            \
 	$(BUILD_DIR)/asm/text1.o                        \
+    $(BUILD_DIR)/asm/RVL/aralt.o   \
+    $(BUILD_DIR)/asm/RVL/base.o   \
+    $(BUILD_DIR)/asm/RVL/os.o   \
+    $(BUILD_DIR)/asm/RVL/exi.o   \
+    $(BUILD_DIR)/asm/RVL/si.o   \
+    $(BUILD_DIR)/asm/RVL/db.o   \
+    $(BUILD_DIR)/asm/RVL/vi.o   \
+    $(BUILD_DIR)/asm/RVL/mtx.o   \
+    $(BUILD_DIR)/asm/RVL/gx.o   \
+    $(BUILD_DIR)/asm/RVL/dvd.o   \
+    $(BUILD_DIR)/asm/RVL/ai.o   \
+    $(BUILD_DIR)/asm/RVL/ax.o   \
+    $(BUILD_DIR)/asm/RVL/axfx.o   \
+    $(BUILD_DIR)/asm/RVL/mem.o   \
+    $(BUILD_DIR)/asm/RVL/code_80CA34C.o   \
+    $(BUILD_DIR)/asm/RVL/dsp.o   \
+    $(BUILD_DIR)/asm/RVL/nand.o   \
+    $(BUILD_DIR)/asm/RVL/sc.o   \
+    $(BUILD_DIR)/asm/RVL/arc.o   \
+    $(BUILD_DIR)/asm/RVL/esp.o   \
+    $(BUILD_DIR)/asm/RVL/ipc.o   \
+    $(BUILD_DIR)/asm/RVL/fs.o   \
+    $(BUILD_DIR)/asm/RVL/pad.o   \
+    $(BUILD_DIR)/asm/RVL/wpad.o   \
+    $(BUILD_DIR)/asm/RVL/euart.o   \
+    $(BUILD_DIR)/asm/RVL/usb.o   \
+    $(BUILD_DIR)/asm/RVL/wud.o   \
+    $(BUILD_DIR)/asm/RVL/bte.o   \
     $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/Runtime/__mem.o   \
     $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/Runtime/__va_arg.o   \
     $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/Runtime/global_destructor_chain.o   \

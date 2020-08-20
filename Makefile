@@ -29,7 +29,8 @@ ASM_DIRS := asm asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
 			asm/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision \
 			asm/MSL/MSL_C/PPC_EABI/Runtime \
 			asm/MSL/MSL_C/PPC_EABI/SRC \
-			asm/MSL/MSL_C/PPC_EABI
+			asm/MSL/MSL_C/PPC_EABI \
+			asm/RVL
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))
