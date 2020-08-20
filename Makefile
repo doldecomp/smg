@@ -30,7 +30,9 @@ ASM_DIRS := asm asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
 			asm/MSL/MSL_C/PPC_EABI/Runtime \
 			asm/MSL/MSL_C/PPC_EABI/SRC \
 			asm/MSL/MSL_C/PPC_EABI \
-			asm/RVL
+			asm/RVL \
+			asm/RevoEx \
+			asm/Game/JAudio2
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))

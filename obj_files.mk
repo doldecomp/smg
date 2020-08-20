@@ -9,6 +9,17 @@ EXTABINDEX_O_FILES :=                               \
 
 TEXT_O_FILES := 						            \
 	$(BUILD_DIR)/asm/text1.o                        \
+    $(BUILD_DIR)/asm/RVL/gd.o   \
+    $(BUILD_DIR)/asm/RVL/kpad.o   \
+    $(BUILD_DIR)/asm/RVL/thp.o   \
+    $(BUILD_DIR)/asm/RVL/tpl.o   \
+    $(BUILD_DIR)/asm/RVL/wenc.o   \
+    $(BUILD_DIR)/asm/RVL/rso.o   \
+    $(BUILD_DIR)/asm/RVL/RVLFaceLib.o   \
+    $(BUILD_DIR)/asm/RevoEx/net.o   \
+    $(BUILD_DIR)/asm/RevoEx/nwc24.o   \
+    $(BUILD_DIR)/asm/RevoEx/vf.o   \
+    $(BUILD_DIR)/asm/Game/JAudio2/JAudio2.o   \
     $(BUILD_DIR)/asm/RVL/aralt.o   \
     $(BUILD_DIR)/asm/RVL/base.o   \
     $(BUILD_DIR)/asm/RVL/os.o   \
