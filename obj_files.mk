@@ -9,6 +9,43 @@ EXTABINDEX_O_FILES :=                               \
 
 TEXT_O_FILES := 						            \
 	$(BUILD_DIR)/asm/text1.o                        \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/Runtime/__mem.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/Runtime/__va_arg.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/Runtime/global_destructor_chain.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/Runtime/NMWException.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/Runtime/ptmf.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/Runtime/runtime.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/Runtime/__init_cpp_exceptions.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/Runtime/Gecko_ExceptionPPC.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/Runtime/GCN_mem_alloc.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/alloc.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/ansi_files.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/ansi_fp.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/arith.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/buffer_io.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/ctype.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/direct_io.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/file_io.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/FILE_POS.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/mbstring.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/mem.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/mem_funcs.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/math_api.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/misc_io.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/printf.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/scanf.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/signal.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/string.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/strtold.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/strtoul.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/wmem.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/wprintf.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/wstring.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/wchar_io.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/uart_console_io_gcn.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/abort_exit_ppc_eabi.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/math_sun.o   \
+    $(BUILD_DIR)/asm/MSL/MSL_C/PPC_EABI/extras.o   \
     $(BUILD_DIR)/asm/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/e_acos.o   \
     $(BUILD_DIR)/asm/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/e_asin.o   \
     $(BUILD_DIR)/asm/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/e_atan2.o   \
