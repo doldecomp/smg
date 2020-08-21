@@ -7,8 +7,23 @@ EXTAB_O_FILES :=                                    \
 EXTABINDEX_O_FILES :=                               \
     $(BUILD_DIR)/asm/extabindex.o
 
-TEXT_O_FILES := 						            \
+TEXT_O_FILES := 					            \
+    $(BUILD_DIR)/asm/nw4r/libnw4r_ut.o   \
+    $(BUILD_DIR)/asm/nw4r/libnw4r_db.o   \
+    $(BUILD_DIR)/asm/nw4r/libnw4r_math.o   \
+    $(BUILD_DIR)/asm/nw4r/libnw4r_lyt.o   \
 	$(BUILD_DIR)/asm/text1.o                        \
+    $(BUILD_DIR)/asm/Game/NWC24/NWC24.o \
+    $(BUILD_DIR)/asm/Game/JKernel/JKernel.o \
+    $(BUILD_DIR)/asm/Game/JSupport/JSupport.o \
+    $(BUILD_DIR)/asm/Game/JGadget/JGadget.o \
+    $(BUILD_DIR)/asm/Game/JUtility/JUtility.o \
+    $(BUILD_DIR)/asm/Game/J2D/J2DGraph.o \
+    $(BUILD_DIR)/asm/Game/J3D/J3DGraphBase.o \
+    $(BUILD_DIR)/asm/Game/J3D/J3DGraphAnimator.o \
+    $(BUILD_DIR)/asm/Game/J3D/J3DGraphLoader.o \
+    $(BUILD_DIR)/asm/Game/JMath/JMath.o \
+    $(BUILD_DIR)/asm/Game/JParticle/JParticle.o \
     $(BUILD_DIR)/asm/RVL/gd.o   \
     $(BUILD_DIR)/asm/RVL/kpad.o   \
     $(BUILD_DIR)/asm/RVL/thp.o   \

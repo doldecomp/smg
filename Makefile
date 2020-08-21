@@ -32,7 +32,17 @@ ASM_DIRS := asm asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
 			asm/MSL/MSL_C/PPC_EABI \
 			asm/RVL \
 			asm/RevoEx \
-			asm/Game/JAudio2
+			asm/Game/JAudio2 \
+			asm/nw4r  \
+			asm/Game/J2D \
+			asm/Game/J3D \
+			asm/Game/JGadget \
+			asm/Game/JKernel \
+			asm/Game/JMath \
+			asm/Game/JParticle \
+			asm/Game/JSupport \
+			asm/Game/JUtility \
+			asm/Game/NWC24
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))
