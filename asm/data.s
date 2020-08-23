@@ -32577,7 +32577,10 @@ lbl_805E9B00:
 	.incbin "baserom.dol", 0x5E5C00, 0x5C
 .global lbl_805E9B5C
 lbl_805E9B5C:
-	.incbin "baserom.dol", 0x5E5C5C, 0x15C
+	.incbin "baserom.dol", 0x5E5C5C, 0x94
+.global lbl_805E9BF0
+lbl_805E9BF0:
+	.string "DVDConvertEntrynumToPath(possibly DVDOpen or DVDChangeDir or DVDOpenDir): specified directory or file (%s) doesn't match standard 8.3 format. This is a temporary restriction and will be removed soon\n"
 .global lbl_805E9CB8
 lbl_805E9CB8:
 	.incbin "baserom.dol", 0x5E5DB8, 0x38

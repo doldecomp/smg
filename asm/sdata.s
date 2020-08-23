@@ -3141,9 +3141,10 @@ lbl_8069E1A0:
 .global lbl_8069E1A8
 lbl_8069E1A8:
 	.incbin "baserom.dol", 0x5F3028, 0x8
-.global lbl_8069E1B0
-lbl_8069E1B0:
-	.incbin "baserom.dol", 0x5F3030, 0x8
+.global __DVDLongFileNameFlag
+__DVDLongFileNameFlag:
+	.long 1
+	.align 3
 .global lbl_8069E1B8
 lbl_8069E1B8:
 	.incbin "baserom.dol", 0x5F3038, 0x8

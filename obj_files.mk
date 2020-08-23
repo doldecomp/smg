@@ -44,6 +44,7 @@ TEXT_O_FILES := 					            \
     $(BUILD_DIR)/asm/RVL/vi.o   \
     $(BUILD_DIR)/asm/RVL/mtx.o   \
     $(BUILD_DIR)/asm/RVL/gx.o   \
+    $(BUILD_DIR)/src/RVL/dvd/dvdfs.o   \
     $(BUILD_DIR)/asm/RVL/dvd.o   \
     $(BUILD_DIR)/asm/RVL/ai.o   \
     $(BUILD_DIR)/asm/RVL/ax.o   \

@@ -16,7 +16,7 @@ TARGET := smg1_us
 
 BUILD_DIR := build/$(TARGET)
 
-SRC_DIRS := src src/runtime_libs/debugger/embedded/MetroTRK/Os/dolphin
+SRC_DIRS := src src/RVL/dvd src/runtime_libs/debugger/embedded/MetroTRK/Os/dolphin
 
 ASM_DIRS := asm asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
 			asm/runtime_libs/debugger/embedded/MetroTRK/Export \
@@ -87,7 +87,7 @@ INCLUDES := -i . -I- -i include
 
 ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -fp hard -nodefaults
-CFLAGS  := -Cpp_exceptions off -proc gekko -fp hard -Os -nodefaults -msgstyle gcc $(INCLUDES)
+CFLAGS  := -Cpp_exceptions off -proc gekko -fp hard -O4,s -nodefaults -msgstyle gcc $(INCLUDES)
 
 # for postprocess.py
 PROCFLAGS := -fprologue-fixup=old_stack

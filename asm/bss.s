@@ -13984,24 +13984,26 @@ lbl_806A2EFC:
 .global lbl_806A2F00
 lbl_806A2F00:
 	.skip 0x8
-.global lbl_806A2F08
-lbl_806A2F08:
-	.skip 0x8
+.global currentDirectory
+currentDirectory:
+	.space 4
+	.align 3
 .global lbl_806A2F10
 lbl_806A2F10:
 	.skip 0x8
-.global lbl_806A2F18
-lbl_806A2F18:
-	.skip 0x4
-.global lbl_806A2F1C
-lbl_806A2F1C:
-	.skip 0x4
-.global lbl_806A2F20
-lbl_806A2F20:
-	.skip 0x4
-.global lbl_806A2F24
-lbl_806A2F24:
-	.skip 0x1C
+.global MaxEntryNum
+MaxEntryNum:
+	.space 4
+.global FstStringStart
+FstStringStart:
+	.space 4
+.global FstStart
+FstStart:
+	.space 4
+.global BootInfo_1
+BootInfo_1:
+	.space 4
+	.align 5
 .global lbl_806A2F40
 lbl_806A2F40:
 	.skip 0x4
