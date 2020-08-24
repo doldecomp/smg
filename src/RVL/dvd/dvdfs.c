@@ -22,7 +22,7 @@ void __DVDFSInit()
 
     if (FstStart)
     {
-        MaxEntryNum = FstStart[0]._8;
+        MaxEntryNum = FstStart->_8;
         FstStringStart = (char*)&(FstStart[MaxEntryNum]);
     }
 }
