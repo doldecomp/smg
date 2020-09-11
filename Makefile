@@ -42,7 +42,8 @@ ASM_DIRS := asm asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
 			asm/Game/JParticle \
 			asm/Game/JSupport \
 			asm/Game/JUtility \
-			asm/Game/NWC24
+			asm/Game/NWC24 \
+			asm/Game/Util
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))

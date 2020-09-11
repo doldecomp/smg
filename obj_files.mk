@@ -13,6 +13,7 @@ TEXT_O_FILES := 					            \
     $(BUILD_DIR)/asm/nw4r/libnw4r_math.o   \
     $(BUILD_DIR)/asm/nw4r/libnw4r_lyt.o   \
 	$(BUILD_DIR)/asm/text1.o                        \
+    $(BUILD_DIR)/asm/Game/Util/Util.o \
     $(BUILD_DIR)/asm/Game/NWC24/NWC24.o \
     $(BUILD_DIR)/asm/Game/JKernel/JKernel.o \
     $(BUILD_DIR)/asm/Game/JSupport/JSupport.o \
