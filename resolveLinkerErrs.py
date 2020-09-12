@@ -1,6 +1,6 @@
 # very experimental python script that goes through a linker error file and resolves any undefined labels while splitting
 
-with open("errors.txt", "r") as f:
+with open("out.txt", "r") as f:
 	lines = f.readlines()
     
 lbls = []
@@ -13,7 +13,7 @@ for line in lines:
             if spl.startswith("lbl_"):
                 lbls.append(spl.strip("\n"))
                 
-with open("asm/Game/Util/Util.s", "r") as asm:
+with open("asm/Game/AudioLib/AudioLib.s", "r") as asm:
     asms = asm.readlines()
 
 prevLine = ""
@@ -39,6 +39,6 @@ for l in asms:
     output.append(l + "\n")
     prevLine = l
     
-with open("test_util.asm", "w") as w:
+with open("AudioLib_o.asm", "w") as w:
     for o in output:
         w.write(o)
