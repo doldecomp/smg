@@ -1,6 +1,12 @@
-.text
-
 .include "macros.inc"
+
+.rodata
+
+.global lbl_8054DBF0
+lbl_8054DBF0:
+	.incbin "baserom.dol", 0x549CF0, 0x10
+
+.text
 
 .global __ptmf_test
 __ptmf_test:

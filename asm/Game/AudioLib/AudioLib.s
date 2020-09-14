@@ -1,5 +1,92 @@
 .include "macros.inc"
 
+.rodata
+
+.global lbl_8052E258
+lbl_8052E258:
+	.incbin "baserom.dol", 0x52A358, 0x8
+.global lbl_8052E260
+lbl_8052E260:
+	.incbin "baserom.dol", 0x52A360, 0x8
+.global lbl_8052E268
+lbl_8052E268:
+	.incbin "baserom.dol", 0x52A368, 0x8
+.global lbl_8052E270
+lbl_8052E270:
+	.incbin "baserom.dol", 0x52A370, 0x8
+.global lbl_8052E278
+lbl_8052E278:
+	.incbin "baserom.dol", 0x52A378, 0x8
+.global lbl_8052E280
+lbl_8052E280:
+	.incbin "baserom.dol", 0x52A380, 0x8
+.global lbl_8052E288
+lbl_8052E288:
+	.incbin "baserom.dol", 0x52A388, 0x8
+.global lbl_8052E290
+lbl_8052E290:
+	.incbin "baserom.dol", 0x52A390, 0x8
+.global lbl_8052E298
+lbl_8052E298:
+	.incbin "baserom.dol", 0x52A398, 0x8
+.global lbl_8052E2A0
+lbl_8052E2A0:
+	.incbin "baserom.dol", 0x52A3A0, 0x200
+.global lbl_8052E4A0
+lbl_8052E4A0:
+	.incbin "baserom.dol", 0x52A5A0, 0x8
+.global lbl_8052E4A8
+lbl_8052E4A8:
+	.incbin "baserom.dol", 0x52A5A8, 0x8
+.global lbl_8052E4B0
+lbl_8052E4B0:
+	.incbin "baserom.dol", 0x52A5B0, 0x8
+.global lbl_8052E4B8
+lbl_8052E4B8:
+	.incbin "baserom.dol", 0x52A5B8, 0x8
+.global lbl_8052E4C0
+lbl_8052E4C0:
+	.incbin "baserom.dol", 0x52A5C0, 0x8
+.global lbl_8052E4C8
+lbl_8052E4C8:
+	.incbin "baserom.dol", 0x52A5C8, 0x348
+.global lbl_8052E810
+lbl_8052E810:
+	.incbin "baserom.dol", 0x52A910, 0x5F0
+.global lbl_8052EE00
+lbl_8052EE00:
+	.incbin "baserom.dol", 0x52AF00, 0x10
+.global lbl_8052EE10
+lbl_8052EE10:
+	.incbin "baserom.dol", 0x52AF10, 0x6C8
+.global lbl_8052F4D8
+lbl_8052F4D8:
+	.incbin "baserom.dol", 0x52B5D8, 0x8
+.global lbl_8052F4E0
+lbl_8052F4E0:
+	.incbin "baserom.dol", 0x52B5E0, 0x8
+.global lbl_8052F4E8
+lbl_8052F4E8:
+	.incbin "baserom.dol", 0x52B5E8, 0x270
+.global lbl_8052F758
+lbl_8052F758:
+	.incbin "baserom.dol", 0x52B858, 0x7C
+.global lbl_8052F7D4
+lbl_8052F7D4:
+	.incbin "baserom.dol", 0x52B8D4, 0x8
+.global lbl_8052F7DC
+lbl_8052F7DC:
+	.incbin "baserom.dol", 0x52B8DC, 0xB0
+.global lbl_8052F88C
+lbl_8052F88C:
+	.incbin "baserom.dol", 0x52B98C, 0x2C
+.global lbl_8052F8B8
+lbl_8052F8B8:
+	.incbin "baserom.dol", 0x52B9B8, 0x20
+.global lbl_8052F8D8
+lbl_8052F8D8:
+	.incbin "baserom.dol", 0x52B9D8, 0x8
+
 .text
 
 .global func_80025EF0

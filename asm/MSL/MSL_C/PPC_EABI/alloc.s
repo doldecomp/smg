@@ -1,6 +1,12 @@
-.text
-
 .include "macros.inc"
+
+.rodata
+
+.global lbl_8054DC88
+lbl_8054DC88:
+	.incbin "baserom.dol", 0x549D88, 0x18
+
+.text
 
 .global Block_link
 Block_link:

@@ -1,6 +1,18 @@
-.text
-
 .include "macros.inc"
+
+.rodata
+
+.global lbl_805483E0
+lbl_805483E0:
+	.incbin "baserom.dol", 0x5444E0, 0x40
+.global lbl_80548420
+lbl_80548420:
+	.incbin "baserom.dol", 0x544520, 0x4278
+.global lbl_8054C698
+lbl_8054C698:
+	.incbin "baserom.dol", 0x548798, 0x20
+
+.text
 
 .global func_8046A2D4
 func_8046A2D4:

@@ -1,6 +1,12 @@
-.text
-
 .include "macros.inc"
+
+.rodata
+
+.global lbl_8054DC18
+lbl_8054DC18:
+	.incbin "baserom.dol", 0x549D18, 0x70
+
+.text
 
 .global __sys_free
 __sys_free:

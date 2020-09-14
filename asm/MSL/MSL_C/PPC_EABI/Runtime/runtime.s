@@ -1,6 +1,12 @@
-.text
-
 .include "macros.inc"
+
+.rodata
+
+.global lbl_8054DC00
+lbl_8054DC00:
+	.incbin "baserom.dol", 0x549D00, 0x18
+
+.text
 
 .global __cvt_fp2unsigned
 __cvt_fp2unsigned:
