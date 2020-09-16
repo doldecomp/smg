@@ -298,7 +298,7 @@ func_804554E8:
 /* 80455554 00450A94  3F 40 80 5F */	lis r26, lbl_805F5A40@ha
 /* 80455558 00450A98  3F 20 80 55 */	lis r25, lbl_8054EE20@ha
 /* 8045555C 00450A9C  3F 00 80 53 */	lis r24, lbl_8052DF00@ha
-/* 80455560 00450AA0  3E E0 80 00 */	lis r23, func_800070A0@ha
+/* 80455560 00450AA0  3E E0 80 00 */	lis r23, __dt__Q44nw4r2ut6detail12LinkListImplFv@ha
 /* 80455564 00450AA4  3E C0 80 00 */	lis r22, __check_pad3@ha
 /* 80455568 00450AA8  9A 83 00 23 */	stb r20, 0x23(r3)
 /* 8045556C 00450AAC  7C 7F 1B 78 */	mr r31, r3
@@ -313,7 +313,7 @@ func_804554E8:
 /* 80455590 00450AD0  3B 39 EE 20 */	addi r25, r25, lbl_8054EE20@l
 /* 80455594 00450AD4  91 03 00 30 */	stw r8, 0x30(r3)
 /* 80455598 00450AD8  3B 18 DF 00 */	addi r24, r24, lbl_8052DF00@l
-/* 8045559C 00450ADC  3A F7 70 A0 */	addi r23, r23, func_800070A0@l
+/* 8045559C 00450ADC  3A F7 70 A0 */	addi r23, r23, __dt__Q44nw4r2ut6detail12LinkListImplFv@l
 /* 804555A0 00450AE0  3A D6 40 00 */	addi r22, r22, __check_pad3@l
 /* 804555A4 00450AE4  90 E3 00 38 */	stw r7, 0x38(r3)
 /* 804555A8 00450AE8  3A 20 00 01 */	li r17, 1

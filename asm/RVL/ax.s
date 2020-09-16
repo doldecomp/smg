@@ -2,14 +2,14 @@
 
 .include "macros.inc"
 
-.global func_804C8410
-func_804C8410:
+.global __AXRemoveFromStack
+__AXRemoveFromStack:
 /* 804C8410 004C3950  80 03 00 0C */	lwz r0, 0xc(r3)
-/* 804C8414 004C3954  3C A0 80 65 */	lis r5, lbl_80657900@ha
-/* 804C8418 004C3958  3C 80 80 65 */	lis r4, lbl_80657980@ha
+/* 804C8414 004C3954  3C A0 80 65 */	lis r5, __AXStackHead@ha
+/* 804C8418 004C3958  3C 80 80 65 */	lis r4, __AXStackTail@ha
 /* 804C841C 004C395C  54 06 10 3A */	slwi r6, r0, 2
-/* 804C8420 004C3960  38 A5 79 00 */	addi r5, r5, lbl_80657900@l
-/* 804C8424 004C3964  38 84 79 80 */	addi r4, r4, lbl_80657980@l
+/* 804C8420 004C3960  38 A5 79 00 */	addi r5, r5, __AXStackHead@l
+/* 804C8424 004C3964  38 84 79 80 */	addi r4, r4, __AXStackTail@l
 /* 804C8428 004C3968  7C 05 30 2E */	lwzx r0, r5, r6
 /* 804C842C 004C396C  7C E4 30 2E */	lwzx r7, r4, r6
 /* 804C8430 004C3970  7C 00 38 40 */	cmplw r0, r7
@@ -52,7 +52,7 @@ func_804C8494:
 /* 804C84AC 004C39EC  4B FD FC 3D */	bl OSDisableInterrupts
 /* 804C84B0 004C39F0  7C 7F 1B 78 */	mr r31, r3
 /* 804C84B4 004C39F4  7F C3 F3 78 */	mr r3, r30
-/* 804C84B8 004C39F8  4B FF FF 59 */	bl func_804C8410
+/* 804C84B8 004C39F8  4B FF FF 59 */	bl __AXRemoveFromStack
 /* 804C84BC 004C39FC  A0 1E 00 38 */	lhz r0, 0x38(r30)
 /* 804C84C0 004C3A00  28 00 00 01 */	cmplwi r0, 1
 /* 804C84C4 004C3A04  40 82 00 0C */	bne lbl_804C84D0
@@ -61,9 +61,9 @@ func_804C8494:
 lbl_804C84D0:
 /* 804C84D0 004C3A10  7F C3 F3 78 */	mr r3, r30
 /* 804C84D4 004C3A14  48 00 01 81 */	bl func_804C8654
-/* 804C84D8 004C3A18  3C A0 80 65 */	lis r5, lbl_80657900@ha
+/* 804C84D8 004C3A18  3C A0 80 65 */	lis r5, __AXStackHead@ha
 /* 804C84DC 004C3A1C  38 00 00 00 */	li r0, 0
-/* 804C84E0 004C3A20  80 85 79 00 */	lwz r4, lbl_80657900@l(r5)
+/* 804C84E0 004C3A20  80 85 79 00 */	lwz r4, __AXStackHead@l(r5)
 /* 804C84E4 004C3A24  7F E3 FB 78 */	mr r3, r31
 /* 804C84E8 004C3A28  90 9E 00 00 */	stw r4, 0(r30)
 /* 804C84EC 004C3A2C  93 C5 79 00 */	stw r30, 0x7900(r5)
@@ -89,10 +89,10 @@ lbl_804C8510:
 /* 804C8530 004C3A70  4B FD FB B9 */	bl OSDisableInterrupts
 /* 804C8534 004C3A74  7C 7F 1B 78 */	mr r31, r3
 /* 804C8538 004C3A78  7F A3 EB 78 */	mr r3, r29
-/* 804C853C 004C3A7C  4B FF FE D5 */	bl func_804C8410
-/* 804C8540 004C3A80  3C 80 80 65 */	lis r4, lbl_80657900@ha
+/* 804C853C 004C3A7C  4B FF FE D5 */	bl __AXRemoveFromStack
+/* 804C8540 004C3A80  3C 80 80 65 */	lis r4, __AXStackHead@ha
 /* 804C8544 004C3A84  57 C5 10 3A */	slwi r5, r30, 2
-/* 804C8548 004C3A88  38 84 79 00 */	addi r4, r4, lbl_80657900@l
+/* 804C8548 004C3A88  38 84 79 00 */	addi r4, r4, __AXStackHead@l
 /* 804C854C 004C3A8C  38 00 00 00 */	li r0, 0
 /* 804C8550 004C3A90  7C 64 28 2E */	lwzx r3, r4, r5
 /* 804C8554 004C3A94  2C 03 00 00 */	cmpwi r3, 0
@@ -104,9 +104,9 @@ lbl_804C8510:
 /* 804C856C 004C3AAC  7F A4 29 2E */	stwx r29, r4, r5
 /* 804C8570 004C3AB0  48 00 00 14 */	b lbl_804C8584
 lbl_804C8574:
-/* 804C8574 004C3AB4  3C 60 80 65 */	lis r3, lbl_80657980@ha
+/* 804C8574 004C3AB4  3C 60 80 65 */	lis r3, __AXStackTail@ha
 /* 804C8578 004C3AB8  7F A4 29 2E */	stwx r29, r4, r5
-/* 804C857C 004C3ABC  38 63 79 80 */	addi r3, r3, lbl_80657980@l
+/* 804C857C 004C3ABC  38 63 79 80 */	addi r3, r3, __AXStackTail@l
 /* 804C8580 004C3AC0  7F A3 29 2E */	stwx r29, r3, r5
 lbl_804C8584:
 /* 804C8584 004C3AC4  93 DD 00 0C */	stw r30, 0xc(r29)

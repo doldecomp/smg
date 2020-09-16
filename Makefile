@@ -18,7 +18,8 @@ BUILD_DIR := build/$(TARGET)
 
 SRC_DIRS := src src/RVL/dvd src/runtime_libs/debugger/embedded/MetroTRK/Os/dolphin
 
-ASM_DIRS := asm asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
+ASM_DIRS := asm \
+			asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
 			asm/runtime_libs/debugger/embedded/MetroTRK/Export \
 			asm/runtime_libs/debugger/embedded/MetroTRK/Os/dolphin \
 			asm/runtime_libs/debugger/embedded/MetroTRK/Processor/ppc/Generic \
@@ -66,6 +67,7 @@ ASM_DIRS := asm asm/runtime_libs/debugger/embedded/MetroTRK/Portable  \
 			asm/Game/Screen \
 			asm/Game/Speaker \
 			asm/Game/System \
+			asm/nw4r/ut
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))

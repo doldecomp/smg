@@ -8,6 +8,9 @@ EXTABINDEX_O_FILES :=                               \
     $(BUILD_DIR)/asm/extabindex.o
 
 TEXT_O_FILES := 					            \
+    $(BUILD_DIR)/asm/nw4r/ut/ut_LinkList.o \
+    $(BUILD_DIR)/asm/nw4r/ut/ut_binaryFileFormat.o \
+    $(BUILD_DIR)/asm/nw4r/ut/ut_CharStrmReader.o \
     $(BUILD_DIR)/asm/nw4r/libnw4r_ut.o   \
     $(BUILD_DIR)/asm/nw4r/libnw4r_db.o   \
     $(BUILD_DIR)/asm/nw4r/libnw4r_math.o   \

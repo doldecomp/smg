@@ -867,11 +867,11 @@ lbl_80657820:
 .global lbl_806578E0
 lbl_806578E0:
 	.skip 0x20
-.global lbl_80657900
-lbl_80657900:
+.global __AXStackHead
+__AXStackHead:
 	.skip 0x80
-.global lbl_80657980
-lbl_80657980:
+.global __AXStackTail
+__AXStackTail:
 	.skip 0x80
 .global lbl_80657A00
 lbl_80657A00:
