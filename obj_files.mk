@@ -15,6 +15,7 @@ TEXT_O_FILES := 					            \
     $(BUILD_DIR)/asm/nw4r/libnw4r_db.o   \
     $(BUILD_DIR)/asm/nw4r/libnw4r_math.o   \
     $(BUILD_DIR)/asm/nw4r/libnw4r_lyt.o   \
+    $(BUILD_DIR)/asm/Game/Animation/AnmPlayer.o \
     $(BUILD_DIR)/asm/Game/Animation/Animation.o \
     $(BUILD_DIR)/asm/Game/AreaObj/AreaObj.o \
     $(BUILD_DIR)/asm/Game/AudioLib/AudioLib.o \
@@ -36,6 +37,7 @@ TEXT_O_FILES := 					            \
     $(BUILD_DIR)/asm/Game/Scene/Scene.o \
     $(BUILD_DIR)/asm/Game/Screen/Screen.o \
     $(BUILD_DIR)/asm/Game/Speaker/Speaker.o \
+    $(BUILD_DIR)/src/Game/System/AlreadyDoneFlagInGalaxy.o \
     $(BUILD_DIR)/asm/Game/System/System.o \
     $(BUILD_DIR)/asm/Game/Util/Util.o \
     $(BUILD_DIR)/asm/Game/NWC24/NWC24.o \
