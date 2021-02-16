@@ -77,18 +77,3 @@ Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8Iterator
 /* 8000718C 000026CC  90 03 00 00 */	stw r0, 0(r3)
 /* 80007190 000026D0  7C A3 2B 78 */	mr r3, r5
 /* 80007194 000026D4  4E 80 00 20 */	blr 
-
-.global Erase__Q44nw4r2ut6detail12LinkListImplFPQ34nw4r2ut12LinkListNode
-Erase__Q44nw4r2ut6detail12LinkListImplFPQ34nw4r2ut12LinkListNode:
-/* 80007198 000026D8  80 C4 00 00 */	lwz r6, 0(r4)
-/* 8000719C 000026DC  38 00 00 00 */	li r0, 0
-/* 800071A0 000026E0  80 A4 00 04 */	lwz r5, 4(r4)
-/* 800071A4 000026E4  90 A6 00 04 */	stw r5, 4(r6)
-/* 800071A8 000026E8  90 C5 00 00 */	stw r6, 0(r5)
-/* 800071AC 000026EC  80 A3 00 00 */	lwz r5, 0(r3)
-/* 800071B0 000026F0  38 A5 FF FF */	addi r5, r5, -1
-/* 800071B4 000026F4  90 A3 00 00 */	stw r5, 0(r3)
-/* 800071B8 000026F8  7C C3 33 78 */	mr r3, r6
-/* 800071BC 000026FC  90 04 00 00 */	stw r0, 0(r4)
-/* 800071C0 00002700  90 04 00 04 */	stw r0, 4(r4)
-/* 800071C4 00002704  4E 80 00 20 */	blr

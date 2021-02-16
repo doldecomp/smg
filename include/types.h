@@ -29,3 +29,4 @@ typedef int                 BOOL;
 #define FALSE 0
 
 #define NULL ((void*)0)
+#define nullptr 0

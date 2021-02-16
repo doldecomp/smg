@@ -9,6 +9,7 @@ EXTABINDEX_O_FILES :=                               \
 
 TEXT_O_FILES := 					            \
     $(BUILD_DIR)/asm/nw4r/ut/ut_LinkList.o \
+    $(BUILD_DIR)/src/nw4r/ut/ut_LinkList.o \
     $(BUILD_DIR)/src/nw4r/ut/ut_binaryFileFormat.o \
     $(BUILD_DIR)/asm/nw4r/ut/ut_CharStrmReader.o \
     $(BUILD_DIR)/asm/nw4r/libnw4r_ut.o   \
